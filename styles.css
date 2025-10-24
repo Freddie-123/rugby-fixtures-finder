@@ -1,0 +1,21 @@
+:root{--bg:#0b0d10;--panel:#12161c;--text:#f3f6fb;--muted:#9aa3b2;--primary:#4f7cff;--border:#1e2430}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+.container{max-width:840px;margin:0 auto;padding:24px}
+h1{margin:16px 0 8px;font-size:28px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+form#query-form{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 16px 12px;margin:16px 0}
+.inputs{display:flex;gap:12px;flex-wrap:wrap}
+.field{flex:1;min-width:220px}
+label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px 2px}
+input{width:100%;padding:12px 12px;border-radius:10px;border:1px solid var(--border);background:#0f1319;color:var(--text)}
+button.primary{margin-top:12px;background:var(--primary);border:none;color:white;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+button.primary:hover{filter:brightness(1.05)}
+.result{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin-top:16px}
+.hidden{display:none}
+.code{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+.time{font-weight:700}
+.meta{color:var(--muted);font-size:14px;margin-top:6px}
+.error{color:#ff7b7b}
