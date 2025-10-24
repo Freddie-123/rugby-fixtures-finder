@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2025-11-08T15:00:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Twickenham Stadium, London",
+    "teams": { "home": "England", "away": "New Zealand" }
+  },
+  {
+    "date": "2025-11-08T17:30:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Aviva Stadium, Dublin",
+    "teams": { "home": "Ireland", "away": "Australia" }
+  },
+  {
+    "date": "2025-11-09T14:00:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Principality Stadium, Cardiff",
+    "teams": { "home": "Wales", "away": "South Africa" }
+  },
+  {
+    "date": "2025-11-15T15:00:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Stade de France, Paris",
+    "teams": { "home": "France", "away": "Fiji" }
+  },
+  {
+    "date": "2025-11-15T17:30:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Murrayfield, Edinburgh",
+    "teams": { "home": "Scotland", "away": "Argentina" }
+  },
+  {
+    "date": "2025-11-22T15:00:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Twickenham Stadium, London",
+    "teams": { "home": "England", "away": "South Africa" }
+  },
+  {
+    "date": "2025-11-22T17:30:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Aviva Stadium, Dublin",
+    "teams": { "home": "Ireland", "away": "New Zealand" }
+  },
+  {
+    "date": "2025-11-29T15:00:00Z",
+    "competition": "Autumn Nations Series",
+    "venue": "Twickenham Stadium, London",
+    "teams": { "home": "England", "away": "Australia" }
+  },
+  {
+    "date": "2026-02-01T15:00:00Z",
+    "competition": "Six Nations",
+    "venue": "Stadio Olimpico, Rome",
+    "teams": { "home": "Italy", "away": "England" }
+  },
+  {
+    "date": "2026-02-07T16:45:00Z",
+    "competition": "Six Nations",
+    "venue": "Murrayfield, Edinburgh",
+    "teams": { "home": "Scotland", "away": "Wales" }
+  },
+  {
+    "date": "2026-02-08T15:00:00Z",
+    "competition": "Six Nations",
+    "venue": "Stade de France, Paris",
+    "teams": { "home": "France", "away": "Ireland" }
+  },
+  {
+    "date": "2026-07-11T07:35:00Z",
+    "competition": "July Internationals",
+    "venue": "Eden Park, Auckland",
+    "teams": { "home": "New Zealand", "away": "England" }
+  }
+]
