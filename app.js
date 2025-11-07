@@ -1,4 +1,5 @@
 // Hook up to your form elements (change IDs if your HTML uses different ones)
+import "./data-source.js";
 const teamAInput = document.getElementById('teamA'); // text input for team A
 const teamBInput = document.getElementById('teamB'); // text input for team B
 const findButton = document.getElementById('findBtn'); // button
