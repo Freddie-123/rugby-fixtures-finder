@@ -59,5 +59,41 @@ if (findButton) {
       Venue: ${fixture.venue}
     `;
   });
-}
+}import { findNextFixtureBetween } from "./data-source.js"; // only if you're using modules
+// if not using modules, just skip that line — the function is already global
+
+// grab the form and result section
+const form = document.getElementById("query-form");
+const result = document.getElementById("result");
+
+// when the form is submitted
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // stop the page from refreshing
+
+  const teamA = document.getElementById("teamA").value.trim();
+  const teamB = document.getElementById("teamB").value.trim();
+
+  // start with a little message
+  result.classList.remove("hidden");
+  result.textContent = "Looking...";
+
+  // use your helper function
+  const fixture = findNextFixtureBetween(teamA, teamB);
+
+  // if not found
+  if (!fixture) {
+    result.textContent = `No upcoming fixture found between "${teamA}" and "${teamB}".`;
+    return;
+  }
+
+  // format and show the result
+  const date = new Date(fixture.date).toLocaleString();
+  result.innerHTML = `
+    <h2>Next Fixture</h2>
+    <p><strong>${fixture.home}</strong> vs <strong>${fixture.away}</strong></p>
+    <p>Date: ${date}</p>
+    <p>Venue: ${fixture.venue}</p>
+  `;
+});
+
 
