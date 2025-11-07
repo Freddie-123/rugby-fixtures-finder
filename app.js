@@ -26,4 +26,38 @@ if (findButton) {
     `;
   });
 }
+// ---- connect the button to our fixture finder ----
+
+// change these IDs if your HTML uses different ones
+const teamAInput = document.getElementById("teamA");
+const teamBInput = document.getElementById("teamB");
+const findButton = document.getElementById("findBtn");
+const resultDiv = document.getElementById("result");
+
+if (findButton) {
+  findButton.addEventListener("click", (event) => {
+    event.preventDefault(); // stops the form from reloading the page
+
+    const teamA = teamAInput.value.trim();
+    const teamB = teamBInput.value.trim();
+
+    resultDiv.innerText = "Looking...";
+
+    const fixture = findNextFixtureBetween(teamA, teamB);
+
+    if (!fixture) {
+      resultDiv.innerText = `No upcoming fixture found between "${teamA}" and "${teamB}".`;
+      return;
+    }
+
+    const date = new Date(fixture.date).toLocaleString();
+
+    resultDiv.innerHTML = `
+      <strong>Next fixture:</strong><br>
+      ${fixture.home} vs ${fixture.away}<br>
+      Date/time: ${date}<br>
+      Venue: ${fixture.venue}
+    `;
+  });
+}
 
