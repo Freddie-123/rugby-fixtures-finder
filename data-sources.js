@@ -19,7 +19,7 @@ function norm(s) {
 }
 
 // Returns the next fixture object or null if none found
-function findNextFixtureBetween(teamAName, teamBName) {
+export function findNextFixtureBetween(teamAName, teamBName) {
   const a = norm(teamAName);
   const b = norm(teamBName);
   if (!a || !b) return null;
@@ -41,4 +41,3 @@ function findNextFixtureBetween(teamAName, teamBName) {
 
   return matches.length ? matches[0] : null;
 }
-
